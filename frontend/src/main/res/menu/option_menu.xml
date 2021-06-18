@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/settings"
+        android:title="设置"
+        android:orderInCategory="1"
+        android:icon="@drawable/setting">
+
+        <menu>
+            <group android:id="@+id/group_single"
+                android:menuCategory="system">
+                <item android:id="@+id/changefontsize"
+                    android:title="改变字体大小"
+                    android:checked="true"/>
+                <item android:id="@+id/darkmode"
+                    android:title="深色模式"
+                    android:checkable="true"/>
+            </group>
+        </menu>
+    </item>
+            <group android:id="@+id/group_all"
+                android:menuCategory="system"
+                android:enabled="true">
+                <item
+                    android:id="@+id/login"
+                    android:title="登录"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/server"
+                    android:title="服务器传文件"
+                    android:checkable="true"
+                    />
+                <item
+                    android:id="@+id/bluetooth"
+                    android:title="蓝牙传文件"
+                    android:checkable="true"
+                    />
+            </group>
+</menu>

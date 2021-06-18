@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/file_select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择文件" />
+
+        <TextView
+            android:id="@+id/path_show_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件路径测试"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入提取码"
+            android:id="@+id/access_editText"
+            ></EditText>
+
+        <Button
+            android:id="@+id/file_download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载文件" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入提取码"
+            android:id="@+id/download_access"
+            ></EditText>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

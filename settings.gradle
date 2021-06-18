@@ -1,0 +1,5 @@
+include ':bt_test'
+include ':bluetooth'
+include ':frontend'
+include ':app'
+rootProject.name = "AirShare"
